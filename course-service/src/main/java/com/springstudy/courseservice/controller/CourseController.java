@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
-
+//야호
 @Slf4j
 @RestController
 @RequestMapping("/courses")
