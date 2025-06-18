@@ -33,6 +33,22 @@ jobs:
         id: login-ecr
         uses: aws-actions/amazon-ecr-login@v2
 
+      - name: Build gradlew
+        run: |
+          SERVICES="config-service discovery-service gateway-service user-service order-service course-service post-service eval-service"
+          for SERVICE in $SERVICES; do
+            cd $SERVICE
+            chmod +x ./gradlew
+            ./gradlew clean build
+            cd ../
+          done
+        
+
+        cd config-service
+        chmod +x ./gradlew
+        ./gradlew clean build
+
+
       - name: Build and Push Docker images
         run: |
           SERVICES="config-service discovery-service gateway-service user-service order-service course-service post-service eval-service"
@@ -41,7 +57,6 @@ jobs:
             docker push $ECR_REPOSITORY/$SERVICE:latest
           done
 
-      
 
       - name: Deploy to EC2 via SSH
         uses: appleboy/ssh-action@v1.0.3
