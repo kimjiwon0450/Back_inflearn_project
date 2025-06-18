@@ -44,11 +44,6 @@ jobs:
           done
         
 
-        cd config-service
-        chmod +x ./gradlew
-        ./gradlew clean build
-
-
       - name: Build and Push Docker images
         run: |
           SERVICES="config-service discovery-service gateway-service user-service order-service course-service post-service eval-service"
