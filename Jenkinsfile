@@ -30,7 +30,7 @@ pipeline {
                         // changedFiles 이라는 리스트를 조회해서 service 변수에 들어온 서비스 이름과
                         // 하나라도 일치하는 이름이 있다면 true, 하나도 존재하지 않으면 false
                         // service: user-service -> 변경된 파일 경로가 user-service/로 시작한다면 true
-                        if (changedFiles.any {it.startWith(service+"/")}) {
+                        if (changedFiles.any {it.startsWith(service+"/")}) {
                             changedService.add(service)
                         }
                     }
