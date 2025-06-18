@@ -4,17 +4,65 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3149b107-6f9c-4e14-ba2b-315204dc0292" name="Changes" comment="평점정렬 오류 수정">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="3149b107-6f9c-4e14-ba2b-315204dc0292" name="Changes" comment="카테고리+정렬 동시조회 로직 추가">
+      <change afterPath="$PROJECT_DIR$/config-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discovery-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eval-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/post-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/post-service/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course-service/src/main/java/com/springstudy/courseservice/controller/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/course-service/src/main/java/com/springstudy/courseservice/controller/CourseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course-service/src/main/java/com/springstudy/courseservice/service/CourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/course-service/src/main/java/com/springstudy/courseservice/service/CourseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-service/.gradle/8.13/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/.gradle/8.13/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-service/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/course-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/course-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eval-service/.gradle/8.13/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/eval-service/.gradle/8.13/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eval-service/.gradle/8.13/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/eval-service/.gradle/8.13/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eval-service/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/eval-service/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eval-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eval-service/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postservice/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/post-service/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postservice/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/post-service/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postservice/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/post-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postservice/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/post-service/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postservice/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/post-service/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postservice/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/post-service/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postservice/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/post-service/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postservice/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postservice/src/main/java/com/playdata/postservice/PostserviceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/post-service/src/main/java/com/playdata/postservice/PostserviceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postservice/src/main/java/com/playdata/postservice/client/CourseServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/post-service/src/main/java/com/playdata/postservice/client/CourseServiceClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postservice/src/main/java/com/playdata/postservice/client/UserServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/post-service/src/main/java/com/playdata/postservice/client/UserServiceClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postservice/src/main/java/com/playdata/postservice/common/auth/JwtAuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/post-service/src/main/java/com/playdata/postservice/common/auth/JwtAuthFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postservice/src/main/java/com/playdata/postservice/common/auth/JwtTokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/post-service/src/main/java/com/playdata/postservice/common/auth/JwtTokenProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postservice/src/main/java/com/playdata/postservice/common/auth/TokenUserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/post-service/src/main/java/com/playdata/postservice/common/auth/TokenUserInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postservice/src/main/java/com/playdata/postservice/common/configs/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/post-service/src/main/java/com/playdata/postservice/common/configs/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postservice/src/main/java/com/playdata/postservice/common/dto/CommonErrorDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/post-service/src/main/java/com/playdata/postservice/common/dto/CommonErrorDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postservice/src/main/java/com/playdata/postservice/common/dto/CommonResDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/post-service/src/main/java/com/playdata/postservice/common/dto/CommonResDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postservice/src/main/java/com/playdata/postservice/common/entity/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/post-service/src/main/java/com/playdata/postservice/common/entity/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postservice/src/main/java/com/playdata/postservice/common/entity/BaseTimeEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/post-service/src/main/java/com/playdata/postservice/common/entity/BaseTimeEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postservice/src/main/java/com/playdata/postservice/common/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/post-service/src/main/java/com/playdata/postservice/common/entity/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postservice/src/main/java/com/playdata/postservice/common/exception/CommonExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/post-service/src/main/java/com/playdata/postservice/common/exception/CommonExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postservice/src/main/java/com/playdata/postservice/common/exception/CustomAuthenticationEntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/post-service/src/main/java/com/playdata/postservice/common/exception/CustomAuthenticationEntryPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postservice/src/main/java/com/playdata/postservice/post/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/post-service/src/main/java/com/playdata/postservice/post/controller/PostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postservice/src/main/java/com/playdata/postservice/post/dto/CommentResDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/post-service/src/main/java/com/playdata/postservice/post/dto/CommentResDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postservice/src/main/java/com/playdata/postservice/post/dto/CommentSaveReqDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/post-service/src/main/java/com/playdata/postservice/post/dto/CommentSaveReqDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postservice/src/main/java/com/playdata/postservice/post/dto/CourseResDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/post-service/src/main/java/com/playdata/postservice/post/dto/CourseResDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postservice/src/main/java/com/playdata/postservice/post/dto/PostCoLengthDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/post-service/src/main/java/com/playdata/postservice/post/dto/PostCoLengthDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postservice/src/main/java/com/playdata/postservice/post/dto/PostModiReqDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/post-service/src/main/java/com/playdata/postservice/post/dto/PostModiReqDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postservice/src/main/java/com/playdata/postservice/post/dto/PostResDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/post-service/src/main/java/com/playdata/postservice/post/dto/PostResDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postservice/src/main/java/com/playdata/postservice/post/dto/PostSaveReqDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/post-service/src/main/java/com/playdata/postservice/post/dto/PostSaveReqDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postservice/src/main/java/com/playdata/postservice/post/dto/UserResDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/post-service/src/main/java/com/playdata/postservice/post/dto/UserResDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postservice/src/main/java/com/playdata/postservice/post/entity/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/post-service/src/main/java/com/playdata/postservice/post/entity/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postservice/src/main/java/com/playdata/postservice/post/entity/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/post-service/src/main/java/com/playdata/postservice/post/entity/Post.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postservice/src/main/java/com/playdata/postservice/post/entity/PostStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/post-service/src/main/java/com/playdata/postservice/post/entity/PostStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postservice/src/main/java/com/playdata/postservice/post/repository/CommentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/post-service/src/main/java/com/playdata/postservice/post/repository/CommentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postservice/src/main/java/com/playdata/postservice/post/repository/PostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/post-service/src/main/java/com/playdata/postservice/post/repository/PostRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postservice/src/main/java/com/playdata/postservice/post/service/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/post-service/src/main/java/com/playdata/postservice/post/service/PostService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postservice/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/post-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postservice/src/test/java/com/playdata/postservice/PostserviceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/post-service/src/test/java/com/playdata/postservice/PostserviceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +118,7 @@
         <option value="Enum" />
         <option value="Class" />
         <option value="Interface" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
@@ -89,8 +138,8 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/cookiboii/Msa_project.git&quot;,
-    &quot;accountId&quot;: &quot;cdc124fd-3631-485f-b68e-e804517d9a10&quot;
+    &quot;url&quot;: &quot;https://github.com/kimjiwon0450/Back_inflearn_project.git&quot;,
+    &quot;accountId&quot;: &quot;40efe769-1992-43bf-a208-5eefd6505775&quot;
   }
 }</component>
   <component name="KubernetesApiPersistence">{}</component>
@@ -112,55 +161,55 @@
     <option name="flattenModules" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Build gateway-service.executor": "Run",
-    "Gradle.config-service 빌드.executor": "Run",
-    "Gradle.course-service 빌드.executor": "Run",
-    "Gradle.discovery-service 빌드.executor": "Run",
-    "Gradle.eval-service 빌드.executor": "Run",
-    "Gradle.gateway-service 빌드.executor": "Run",
-    "Gradle.order-service 빌드.executor": "Run",
-    "Gradle.postservice 빌드.executor": "Run",
-    "Gradle.user-service 빌드.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.ConfigServiceApplication.executor": "Run",
-    "Spring Boot.CourseServiceApplication (1).executor": "Run",
-    "Spring Boot.CourseServiceApplication.executor": "Run",
-    "Spring Boot.DiscoveryServiceApplication.executor": "Run",
-    "Spring Boot.EvalServiceApplication.executor": "Run",
-    "Spring Boot.GatewayServiceApplication.executor": "Run",
-    "Spring Boot.OrderServiceApplication.executor": "Run",
-    "Spring Boot.PostserviceApplication.executor": "Run",
-    "Spring Boot.UserServiceApplication.executor": "Run",
-    "git-widget-placeholder": "feature/courseservice",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/user/Desktop/Msa_project/eval-service/src/main/java/com/playdata/evalservice/eval/dto",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "모듈",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "editor.preferences.completion",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build gateway-service.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.config-service 빌드.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.course-service 빌드.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.discovery-service 빌드.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.eval-service 빌드.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.gateway-service 빌드.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.order-service 빌드.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.postservice 빌드.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.user-service 빌드.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.ConfigServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.CourseServiceApplication (1).executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.CourseServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.DiscoveryServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.EvalServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.GatewayServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.OrderServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.PostserviceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.UserServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/courseservice&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/Desktop/Msa_project/eval-service/src/main/java/com/playdata/evalservice/eval/dto&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;모듈&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.playdata.evalservice.eval.dto" />
@@ -190,7 +239,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.CourseServiceApplication (1)">
+  <component name="RunManager">
     <configuration name="ConfigServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="config-service.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.playdata.configservice.ConfigServiceApplication" />
@@ -247,24 +296,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Spring Boot.EvalServiceApplication" />
-      <item itemvalue="Spring Boot.ConfigServiceApplication" />
-      <item itemvalue="Spring Boot.CourseServiceApplication (1)" />
-      <item itemvalue="Spring Boot.GatewayServiceApplication" />
-      <item itemvalue="Spring Boot.DiscoveryServiceApplication" />
-      <item itemvalue="Spring Boot.OrderServiceApplication" />
-      <item itemvalue="Spring Boot.PostserviceApplication" />
-      <item itemvalue="Spring Boot.UserServiceApplication" />
-    </list>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26053.27" />
-        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.26053.27" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="StructureViewState">
@@ -605,7 +636,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750035246708</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="카테고리+정렬 동시조회 로직 추가">
+      <option name="closed" value="true" />
+      <created>1750058229441</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1750058229441</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -635,7 +674,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="질문, 답글 프론트와 기능 구현됨." />
     <MESSAGE value="Gateway의 AuthorizationHeaderFilter 허용 url 수정하였습니다!" />
     <MESSAGE value="Course-service에 카테고리로 조회에 Page 기능 추가하였습니다." />
     <MESSAGE value="security 설정 및, course-service의 사소한 수정 있습니다." />
@@ -660,6 +698,7 @@
     <MESSAGE value="세팅추가" />
     <MESSAGE value="config 오류 수정, 단 local에서 개발중이기에, config-service를 실행하시면 오류가 발생하니, 배포환경이 아닌 로컬환경에서는 config-service를 실행하지 않고 켜시기 바랍니다." />
     <MESSAGE value="평점정렬 오류 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="평점정렬 오류 수정" />
+    <MESSAGE value="카테고리+정렬 동시조회 로직 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="카테고리+정렬 동시조회 로직 추가" />
   </component>
 </project>
