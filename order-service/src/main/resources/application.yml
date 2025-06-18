@@ -46,6 +46,6 @@ eureka:
 # 카카오페이용 데이터
 oauth2:
   kakao:
-    client-id: A358BEEA391058C39ECF
+    client-id: 
     redirect_uri: http://43.203.255.111:8000/order-service/order/kakao
-    secret_key: DEVF9A62101B8B449E3C06CC239A772486577D86
+    secret_key: 
