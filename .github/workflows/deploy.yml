@@ -41,6 +41,8 @@ jobs:
             docker push $ECR_REPOSITORY/$SERVICE:latest
           done
 
+      
+
       - name: Deploy to EC2 via SSH
         uses: appleboy/ssh-action@v1.0.3
         with:
@@ -52,3 +54,10 @@ jobs:
             docker-compose pull
             docker-compose down
             docker-compose up -d --build
+
+      - name: Deploy on EC2
+        run: |
+          ssh -o StrictHostKeyChecking=no ec2-user@${{ env.EC2_HOST }} << 'EOF'
+            cd ~/myInflearn
+            ./deploy.sh
+          EOF
