@@ -1,7 +1,7 @@
 
 pipeline {
     agent any // 어느 젠킨스 서버에서나 실행 가능
-    enviroment {
+    environment  {
         SERVICE_DIRS = "config-service,discovery-service,gateway-service,course-service,eval-service,order-service,post-service,user-service"
     }
     stages {
