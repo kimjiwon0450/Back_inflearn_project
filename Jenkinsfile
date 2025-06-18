@@ -1,10 +1,7 @@
 
 pipeline {
     agent any
-    enviroment {
-        // 환경 변수 선언
 
-    }
     stages {
         stage('Pull Codes from Github') {
             steps {
