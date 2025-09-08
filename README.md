@@ -46,7 +46,7 @@
 7. **Gateway-Service**: API 게이트웨이 (라우팅, 인증 필터)
 8. **Config-Service**: 공통 설정 관리 (Spring Cloud Config)
 9. **Eureka-Service**: 서비스 디스커버리
-![제목 없는 다이어그램 drawio (2)](https://github.com/user-attachments/assets/d0e9b721-18c8-4484-942d-d547c937fea4)
+
 ## 2. 요구사항 정의서
 
 ### 2-1. 기능 요구사항
